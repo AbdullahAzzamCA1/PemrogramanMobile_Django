@@ -107,4 +107,12 @@ path('penerbit/', penerbit),
 ## -- Static files 🗃️
 ## -- Database 🗄️
 ## -- Models 📟
-
+## -- CRUD 📝
+## -- Authentication : Login & Logout 🧔‍♂️
+## -- Akses Username Pada Template 🔲
+## -- Signup / Tambah User 📲
+## -- Upload File 📑
+## -- Export File 📑
+## -- Virtual Environment 📦
+## -- Persiapan Deployment 🧿
+## -- Deployment 🧿

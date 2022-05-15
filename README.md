@@ -105,6 +105,7 @@ path('penerbit/', penerbit),
 
 ## -- Templates 🔲
 ## -- Static files 🗃️
+Static files digunakan untuk menyimpan file css, js, dan gambar.
 ## -- Database 🗄️
 ## -- Models 📟
 ## -- CRUD 📝

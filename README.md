@@ -138,8 +138,49 @@ berguna untuk membuat struktur folder yang lebih baik dan tak terjadi pengulanga
 
 ## -- Static files 🗃️
 Static files digunakan untuk menyimpan file css, js, dan gambar.
+
 ## -- Database 🗄️
+Setelah pertama kali melakukan runserver pada project django, by default django telah membuat database dengan menggunakan dbms Sqlite3.
+
+Config default database django pada settings.py :
+```py
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
+}
+```
+
+### Setup database jika ingin menggunakan Mysql :
+- Install mysql (mysql, python connector)
+- Create database pada cmd dari Mysql
+- Lakukan Config pada file settings.py bagian database : 
+```py
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'nama database',
+        'USER': 'root',
+        'PASSWORD': 'password',
+        'HOST': 'localhost',
+        'PORT': '3306',
+    }
+}
+```
+
+### Command untuk melakukan migrasi (menyebarkan / menginisialisasi tabel – tabel kedalam database.) :
+```cmd
+Python manage.py makemigrations
+```
+Lalu,
+```cmd
+Python manage.py migrate
+```
+
 ## -- Models 📟
+
+
 ## -- CRUD 📝
 ## -- Authentication : Login & Logout 🧔‍♂️
 ## -- Akses Username Pada Template 🔲

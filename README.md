@@ -104,6 +104,38 @@ path('penerbit/', penerbit),
 ```
 
 ## -- Templates 🔲
+Template merupakan file hmtl atau tampilan interface dari web yang dibuat.
+
+Config templates :
+- Settings.py bagian templates
+- Isi value dari ‘DIRS’ ke nama folder templates yang kita buat.
+```py
+TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': ['templates'],
+        'APP_DIRS': True,
+        'OPTIONS': {
+            'context_processors': [
+                'django.template.context_processors.debug',
+                'django.template.context_processors.request',
+                'django.contrib.auth.context_processors.auth',
+                'django.contrib.messages.context_processors.messages',
+            ],
+        },
+    },
+]
+```
+### Django Template Language
+- Substitute Variabel
+- Filter
+- Tags/Control Flow
+### Templates Extending
+kita dapat membuat folder templates base html, sederetan folder project dan apps.
+dan untuk folder templates content dapat dibuat didalam folder apps.
+
+berguna untuk membuat struktur folder yang lebih baik dan tak terjadi pengulangan penulisan code yang sama.
+
 ## -- Static files 🗃️
 Static files digunakan untuk menyimpan file css, js, dan gambar.
 ## -- Database 🗄️

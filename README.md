@@ -179,9 +179,19 @@ Python manage.py migrate
 ```
 
 ## -- Models 📟
+Models merupakan definitive dari database atau representasi tabel pada database. Dengan menggunakan models, kita tidak perlu lagi menggunakan Query SQL untuk membuat tabel di database. Kita dapat melakukan Migrasi pada model, maka Django akan melakukan Create Tabel Sesuai dengan field – field yang ada pada models.
 
+### Foreign Keys
+### Django Admin
+### ORM (Object Relation Mapping)
+### Forms
 
 ## -- CRUD 📝
+
+### Menambah Data
+### Mengubah Data
+### Hapus Data
+
 ## -- Authentication : Login & Logout 🧔‍♂️
 ## -- Akses Username Pada Template 🔲
 ## -- Signup / Tambah User 📲

@@ -198,5 +198,6 @@ Models merupakan definitive dari database atau representasi tabel pada database.
 ## -- Upload File 📑
 ## -- Export File 📑
 ## -- Virtual Environment 📦
-## -- Persiapan Deployment 🧿
 ## -- Deployment 🧿
+### Persiapan
+### Deployment

@@ -182,6 +182,13 @@ Python manage.py migrate
 Models merupakan definitive dari database atau representasi tabel pada database. Dengan menggunakan models, kita tidak perlu lagi menggunakan Query SQL untuk membuat tabel di database. Kita dapat melakukan Migrasi pada model, maka Django akan melakukan Create Tabel Sesuai dengan field – field yang ada pada models.
 
 ### Foreign Keys
+Foreign keys digunakan untuk untuk membuat relasi antar tabel dalam database relational.
+
+bentuk umum :
+```
+nama_field = models.ForeignKey(class_model, on_delete=models.CASCADE)
+```
+
 ### Django Admin
 ### ORM (Object Relation Mapping)
 ### Forms

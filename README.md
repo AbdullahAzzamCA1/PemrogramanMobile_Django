@@ -194,6 +194,15 @@ Untuk membuat django admin kita dapat menjalankan command berikut pada terminal 
 ```cmd
 Python manage.py createsuperuser
 ```
+Untuk melakukan register model dapat dilakukan pada file admin.py pada apps. Contoh :
+```py
+from django.contrib import admin
+from perpustakaan.models import Buku, Kelompok
+
+admin.site.register(Buku)
+admin.site.register(Kelompok)
+```
+
 lalu kemudian isi data sesuai ketentuan yang diminta.
 
 ### ORM (Object Relation Mapping)

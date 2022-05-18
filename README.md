@@ -190,6 +190,12 @@ nama_field = models.ForeignKey(class_model, on_delete=models.CASCADE)
 ```
 
 ### Django Admin
+Untuk membuat django admin kita dapat menjalankan command berikut pada terminal project kita :
+```cmd
+Python manage.py createsuperuser
+```
+lalu kemudian isi data sesuai ketentuan yang diminta.
+
 ### ORM (Object Relation Mapping)
 ### Forms
 

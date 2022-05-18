@@ -195,8 +195,9 @@ Untuk membuat akun django admin kita dapat menjalankan command berikut pada term
 Python manage.py createsuperuser
 ```
 Kemudian aktifkan server, lalu login akun pada url : http://127.0.0.1:8000/admin/
+lalu kemudian isi data sesuai ketentuan yang diminta.
 
-Untuk melakukan register model dapat dilakukan pada file admin.py pada apps. Contoh :
+Untuk melakukan register model ke django admin dapat dilakukan pada file admin.py pada apps. Contoh :
 ```py
 from django.contrib import admin
 from perpustakaan.models import Buku, Kelompok
@@ -205,7 +206,17 @@ admin.site.register(Buku)
 admin.site.register(Kelompok)
 ```
 
-lalu kemudian isi data sesuai ketentuan yang diminta.
+kemudian kita dapat membuat model pada admin.
+Contoh model admin untuk kententuan display, dsb :
+```py
+class BukuAdmin(admin.ModelAdmin):
+    list_display = ['judul', 'penulis', 'penerbit', 'Kelompok_id', 'jumlah']
+    search_fields = ['judul', 'penulis', 'penerbit']
+    list_filter =('Kelompok_id',)
+    list_per_page = 5
+```
+Tampilannya sebagai berikut :
+![image](https://user-images.githubusercontent.com/92994688/168942345-ebf8ec25-af0b-4f67-b81d-87375c9eb4ce.png)
 
 ### ORM (Object Relation Mapping)
 ### Forms

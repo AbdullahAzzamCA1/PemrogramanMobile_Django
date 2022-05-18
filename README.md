@@ -190,10 +190,12 @@ nama_field = models.ForeignKey(class_model, on_delete=models.CASCADE)
 ```
 
 ### Django Admin
-Untuk membuat django admin kita dapat menjalankan command berikut pada terminal project kita :
+Untuk membuat akun django admin kita dapat menjalankan command berikut pada terminal project kita :
 ```cmd
 Python manage.py createsuperuser
 ```
+Kemudian aktifkan server, lalu login akun pada url : http://127.0.0.1:8000/admin/
+
 Untuk melakukan register model dapat dilakukan pada file admin.py pada apps. Contoh :
 ```py
 from django.contrib import admin
